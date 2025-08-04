@@ -21,7 +21,7 @@
 2. 새로운 값이 입력 안되면 터미널에서 `Ctrl+C` 또는 `Q`
 3. 위 1번에서 깃 설정정보에 name, email이 내 정보가 아닐때
 4. `git config --global user.email "hyobin9824@gmail.com"` 이메일 설정
-5. `git config --global user.name "baehyobin"` 이름 설정(메일아이디 동일)
+5. `git config --global user.name "hyobin9824"` 이름 설정(메일아이디 동일)
 6. `git config --list` 위 4~5번 설정 올바르게 됐는지 확인
 ---
 7. `git init` 현재 폴더를 작업 디렉터리 폴더로 연결, 폴더경로 옆에 **master** 표시 생기면 성공!
@@ -29,4 +29,6 @@
 ---
 9. `git add .` **.**이란 작업수정한 모든 파일. 모든 파일을 대기소(스테이지)에 올린다는 뜻
 10. `git status` 현재 스테이지 확인 명령
-11. 
+11. `git commit -m "기록메세지"` 현재 올리는 파일이 어떤 내용인지 기록
+12. `git remote add origin 깃허브저장소주소` 깃허브 저장소 업로드 위치가 어디인지 주소 연결
+13. `git push origin main` 11번에서 커밋한 파일을 12번 저장소에 최종 업로드
