@@ -32,3 +32,13 @@
 11. `git commit -m "기록메세지"` 현재 올리는 파일이 어떤 내용인지 기록
 12. `git remote add origin 깃허브저장소주소` 깃허브 저장소 업로드 위치가 어디인지 주소 연결
 13. `git push origin main` 11번에서 커밋한 파일을 12번 저장소에 최종 업로드
+### 한번만 작성하면 끝인 깃 명령어
+* `git config` 이름, 이메일 설정한 것
+* `git intt` 저장소 설정 
+* `git remote add origin` 저장소 주소 설정
+### 작업 시 깃허브 업로드를 위해 반복해야하는 깃 명령어
+* `git add .`
+* `git commit -m "기록메세지"`
+* `git push origin main`
+### 중간 확인 시
+* `git status` 또는 `git log`
