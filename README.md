@@ -57,3 +57,11 @@
 * `Alt+상하 방향키` 줄 이동
 * `Shift+Alt+상하방향키` 선택한 줄 복제
 * `Shift+Alt+A` 주석생성
+## 250805 자주 쓰는 HTML 문서 기본 태그
+1. `<h1>~<h6>` block - 1대제목~6소제목
+2. `<p>` block - 제목 아래 작성하는 내용 태그
+3. `<br>` inline - 내용 안에 작성하는 줄바꿈태그
+4. `<en><strong>` inline - 내용 안 강조태그
+5. `<del>` inline - 쇼핑몰 원가 등에 사용되는 취소선(삭제)태그
+6. `<address>` block - 회사 주소
+7. `&copy;` 특수문자태그 - copyright 약자
