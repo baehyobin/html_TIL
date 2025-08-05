@@ -34,7 +34,7 @@
 13. `git push origin main` 11번에서 커밋한 파일을 12번 저장소에 최종 업로드
 ### 한번만 작성하면 끝인 깃 명령어
 * `git config` 이름, 이메일 설정한 것
-* `git intt` 저장소 설정 
+* `git init` 저장소 설정 
 * `git remote add origin` 저장소 주소 설정
 ### 작업 시 깃허브 업로드를 위해 반복해야하는 깃 명령어
 * `git add .`
@@ -42,3 +42,7 @@
 * `git push origin main`
 ### 중간 확인 시
 * `git status` 또는 `git log`
+# HTML 작성법
+* `<태그 속성="값" 속성="값"></태그>`
+* 시작태그부터 닫기태그까지 = 한번에 **요소(element)**로 명칭
+* 속성은 시작태그에만 쓰고 닫기태그에는 사용X
