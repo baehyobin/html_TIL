@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <!-- 파비콘 -->
+    <link rel="shortcut icon" href="./images/lavender.png" type="image/x-icon">
+    <meta name="keywords" content="">
+    <title>링크, 이미지, 비디오 | 멀티미디어 요소</title>
+</head>
+<body>
+    <h1 id="top_pst">바로가기 링크</h1>
+    <p>뷰포트보다 웹페이지 길이가 긴 경우 사용</p>
+    <a href="#link_pst">링크공부 위치로 이동</a>
+    <a href="#link_img_pst">이미지공부 위치로 이동</a>
+    <a href="#link_video_pst">비디오공부 위치로 이동</a>
+    <h1>멀티미디어 요소</h1>
+    <h2 id="link_pst">링크 태그</h2>
+    <a href="https://gdweb.co.kr" target="_blank">GDWEB 바로가기</a>
+    <a href="./basic.html">상대경로</a>
+    <hr>
+    <h2 id="link_img_pst">이미지 태그</h2>
+    <p><img src="./images/aoa_banner.jpg" alt="접근성 오픈 아카데미 유튜브 채널 AOA 구독하기, 매주 월요일 콘텐츠 업데이트!"></p>
+    <p><img src="./images/banner02_img01.png" alt="19시까지 주문시 당일발송"></p>
+    <h2>링크와 이미지</h2>
+    <p>웹에 사용되는 이미지는 사용자와 상호작용하는 클릭 가능 이미지라면 a링크태그가 반드시 함께해야한다.</p>
+    <a href="#"><img src="./images/banner02_img02.png" alt="포토리뷰"></a>
+    <a href="#"><img src="./images/common_cart02.png" alt="카트"></a>
+    <a href="#"><img src="./images/common_menu.png" alt="메뉴"></a>
+    <a href="#"><img src="./images/common_my.png" alt="로그인"></a>
+    <a href="#"><img src="./images/common_search.png" alt="검색"></a>
+    <a href="#"><img src="./images/detail_icon_wish.png" alt="관심상품"></a>
+    <hr>
+    <h2 id="link_video_pst">비디오 태그</h2>
+    <p>video 태그는 로컬 위치에 영상파일이 있는 경우 사용하는 태그다.</p>
+    <video src="./video/cat.mp4" autoplay muted loop controls>
+        <source> <!-- 2개 이상의 확장자 연결 -->
+        <track><!-- 자막 --></track>
+    </video>
+    <video src="./video/coffee.mp4" controls></video>
+    <video src="./video/forest.mp4" autoplay muted loop></video>
+    <h2>유튜브 비디오 연결 iframe</h2>
+    <iframe width="462" height="822" src="https://www.youtube.com/embed/yM8-4EEusxk?autoplay=1&loop=1&mute=1&controls=0&playlist=yM8-4EEusxk" title="쇼츠 요리 상상 VS 현실" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <hr>
+    <a href="#top_pst">위로 이동</a>
+</body>
+</html>
