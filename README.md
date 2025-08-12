@@ -90,4 +90,3 @@
 * `git clone 주소 붙여넣기`
 ### gitHub 수정된 작업물 내려받기
 * `git pull origin main`
-### test
