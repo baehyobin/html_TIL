@@ -156,8 +156,18 @@ EX) `h1{color:red;}
 ### 크기조정
 * width와 height로 조정
 * 0이 아닌 수에는 단위를 필수로 기입
-* ex) `width:400px;` `height:100vh;`=viewport height 
+* ex : `width:400px;` `height:100vh;`(=viewport height) 
 ### 안쪽여백조정
-* 안쪽 여백은 padding으로 조정
-* ex) `padding-left:15px;` `padding-right:15px;`
-
+* 안쪽 여백은 padding으로 조정 (padding-left/right/bottom/top)
+* ex : `padding-left:15px;` `padding-right:15px;`
+### 바깥여백조정
+* 바깥 여백은 margin으로 조정 (margin-left/right/bottom/rop)
+* ex : `margin-bottom:16px` 요소끼리 여백만들기 등
+### 글자조정
+* `font-family:'';` 글씨체
+* `font-size:;` 글씨크기
+* `font-weigbt:;` 글자굵기 / regular 400 기준 +-100
+* `line-height:;` 행간
+### 구분선
+* `border(-bottom/top) : (사이즈) (실선여부) (색);`
+* 테두리와 해당 요소의 거리를 둘 땐 margin이 아닌 padding
