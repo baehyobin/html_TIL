@@ -90,3 +90,74 @@
 * `git clone 주소 붙여넣기`
 ### gitHub 수정된 작업물 내려받기
 * `git pull origin main`
+---
+# CSS
+## 캐스케이딩 스타일 시트(폭포 단계별로 작성하는 CSS)
+### CSS 기초 작성 순서
+1. `styles/reset.css` 파일만들기
+2. html파일 head 안 `link:css`자동완성 작성하고 위 1번 파일 연결
+3. (html 작성 완료 기준) 부모->자식 순서대로 모든 선택자 작성 `{}`중광로 공백
+4. 모든 선택자 작성 후 `{속성:값:}`추가 작성하여 디자인 진행하기
+
+## CSS selector
+* 선택자`{속성:값;}` / 선택자`{속성:값;속성:값;속성:값;}`
+- 선택자 : CSS로 디자인하는 대상
+- {} : 속성과 값을 묶어주는 CSS 디자인 괄호
+- 속성 : 선택자에 적용하는 속성
+- 값 : 속성 값
+- ; : 앞 속성값이 여기서 종료했다는 것을 의미
+
+### 색상 속성
+1. color : 글자색
+2. background-color : 배경색
+EX) `h1{color:red;}
+
+### #id
+* `<h1 id="heading">제목</h1>`
+1. `h1 {color:red;}` - h1만 적용
+2. `#heading {color:red;}` - heading 아이디만 적용
+3. `h1#heading {color:red;}` - h1의 heading 아이디만 적용
+
+### .class
+* `<h1 class="title">제목</h1>`
+1. `h1 {color:red;}` - h1만 적용
+2. `.title {color:red;}` - title 클래스만 적용
+3. `h1.title {color:red;}` - h1의 title 클래스만 적용
+
+### CSS children
+* `<div><a></a></div>`
+1. `div a { color:red; }` - div내부의 모든 a에 적용
+1. `div>a { color:red; }` - div내부 자식 a에만 적용
+
+* `<div class="parents"><a>menu</a></div>`
+1. `.parents a {color:red;}` - parents의 모든 a
+2. `.parents>a {color:red;}` - parents의 자식 a
+3. `div.parents a {color:red;}` - div parents의 모든 a
+4. `div.parents>a {color:red;}` - div parents의 자식 a
+
+* `<div class="parents"><a id="nav">menu</a></div>`
+1. `.parents #nav {color:red;}` - parents 안의 모든 nav
+2. `.parents>#nav {color:red;}` - parents 안의 자식 nav만
+3. `div.parents #nav {color:red;}` - div의 class가 parents일때 안의 모든 nav
+4. `div.parents>#nav {color:red;}` - div의 class가 parents일때 안의 자식 nav
+
+### CSS sibling
+`<div class="parents">`
+    `<p>내용1</p>`
+    `<h1>제목<h1>`
+    `<p>내용2</p>`
+    `<p>내용3</p>`
+`</div>`
+1. `.parent p{color:red;}` - 내용1,2,3
+2. `.parent h1+p{color:pink;}` - 내용2
+3. `.parent h1~p{color:yellow;}` - 내용2,3
+
+## 스타일조정
+### 크기조정
+* width와 height로 조정
+* 0이 아닌 수에는 단위를 필수로 기입
+* ex) `width:400px;` `height:100vh;`=viewport height 
+### 안쪽여백조정
+* 안쪽 여백은 padding으로 조정
+* ex) `padding-left:15px;` `padding-right:15px;`
+

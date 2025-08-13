@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>시맨틱태그 | HTML5</title>
+</head>
+<body>
+    <!-- 시멘틱태그가 2개 이상 연속할 경우 class, id 필요 -->
+    <header>
+        <h1>로고</h1>
+        <nav>메인메뉴</nav>
+        <!-- 메인메뉴 외 다른 보조메뉴 등은 ul-li-a 사용(h는 단독이용시) -->
+    </header>
+    <!-- 자식 요소로 제목을 가진 section(권장) -->
+    <section>
+        <h2>베스트</h2>
+        <p>내용</p>
+    </section>
+    <!-- 시멘틱 태그가 2개 이상 들어가면 이름 필수 -->
+    <section class="contents">
+        <section class="news"><h2>뉴스</h2></section>
+        <section class="blog"><h2>블로그</h2></section>
+    </section>
+    <aside>사이드 메뉴 또는 콜아웃 박스</aside>
+    <aside class="news"><h2>뉴스</h2></aside>
+    <aside class="weather"><h2>날씨</h2></aside>
+    <!-- 독립적 요소 article -->
+    <article>블로그, 뉴스기사, 광고</article>
+    <!-- 회사정보, 계열사, 고객센터 정보 -->
+    <footer></footer>
+    <!-- header - main - footer 기본 형제관계(디자인에 따라 다를 수 있음) -->
+    <header>
+        <nav></nav>
+    </header>
+    <main>
+        <aside></aside>
+        <section></section>
+        <article></article>
+    </main>
+    <footer></footer>
+</body>
+</html>

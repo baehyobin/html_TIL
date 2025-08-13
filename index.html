@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <title>효빈 | 웹디자이너&웹퍼블리셔&프론트엔드</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <!-- HTML 내부 CSS 작성 위치(head안 title다음) -->
+    <style>
+        /* 선택자 { 속성:값; 속성:값; } */
+        /* div {background-color :aqua;} */
+        /* 모든 HTML 선택자 작성 -> 속성:값 채우기 */
+        body {background-color:#000;}
+        #wrap {
+            background-color: #fff;
+            /* 크기 width, height는 0이 아닌 수에는 단위가 필수적 */
+            width:440px; height:100vh; /* viewport height */
+            /* 안쪽 여백 padding */
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+        #wrap header {}
+        #wrap header .profile_img{}
+        #wrap header .profile_img img{}
+        #wrap header h1{
+            /* 글자 굵기 Regular 400 기준 +-100 */
+            font-family: 'pretendard';
+            font-weight: 600;
+            font-size: 32px;/* 행간,자간,기본값 생략 */
+            margin-top: 11px;
+            margin-bottom: 11px;
+        }
+        #wrap header h1+h2{
+            font-family: 'pretendard';
+            font-size: 16px;
+            padding-bottom:11px;
+            margin-bottom:11px;
+            border-bottom:1px solid #000;
+        }
+        /* main~footer */
+        #wrap main{}
+        #wrap main h2{
+            font-family:'pretendard';
+            font-size:14px;
+            font-weight:600;
+            margin-bottom:20px;
+        }
+        #wrap main .block{
+            background-color:#eee;
+            padding-top:10px; padding-bottom:20px;
+            padding-left:15px; padding-right: 15px;
+            /* 글자속성 */
+            font-family: 'Pretendard';
+            font-size: 13px;
+            line-height:150%; /* 행간 */
+            color:#0048FF;
+            /* 블록과 인라인 요소 띄우기 */
+            margin-bottom:16px;
+        }
+        #wrap main .inline{
+            background-color :#eee;
+            padding-top:10px; padding-bottom:20px;
+            padding-left:15px; padding-right:15px;
+            font-family: 'Pretendard';
+            font-size:13px;
+            line-height:150%;
+            color:#FF6A00;
+            margin-bottom: 16px;
+        }
+        #wrap .result{}
+        #wrap .result li{
+            margin-bottom:11px;
+            padding-bottom:11px;
+            border-bottom:1px solid #000;
+        }
+        #wrap .result li img{
+            margin-right : 7px;
+        }
+        #wrap .result li a{
+            font-family: 'pretendard';
+            font-size:13px;
+            color:#2D8454;
+        }
+        #wrap footer{}
+        #wrap footer p{}
+        #wrap footer p em{}
+        #wrap footer p span{}
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <p class="proile_img"><img src="./images/profile_photo.jpg" alt="프로필 사진"></p>
+            <h1>HYOBIN</h1>
+            <h2>UI/UX 프론트엔드 반응형웹디자인&웹퍼블리셔 개발 양성과정</h2>
+        </header>
+        <main>
+            <h2>HTML 공부목록</h2>
+            <div class="block">
+                h1, h2, h3, h4, h5, h6, p, blockquote, ul, ol, li, dl, dt, dd ,hr, div, header,  section, aside, nav, footer, article, main, a, video
+            </div>
+            <div class="inline">
+                span, em, strong, br, img, a, sup, sub, code, mark, s, q, del 
+            </div>
+            <h2>작업 결과 바로가기</h2>
+            <ul class="result">
+                <li>
+                    <img src="./images/link.png" alt="바로가기">
+                    <a href="./figma_layout/leeddeok.html">
+                        figma_layout/leeddeok
+                    </a>
+                </li>
+                <li>
+                    <img src="./images/link.png" alt="바로가기">
+                    <a href="./figma_layout/ohou_product.html">
+                        figma_layout/ohou
+                    </a>
+                </li>
+                <li>
+                    <img src="./images/link.png" alt="바로가기">
+                    <a href="./figma_layout/soopsori.html">
+                        figma_layout/sooopsori
+                    </a>
+                </li>
+            </ul>
+            <h2>과제 제출</h2>
+            <ul class="result">
+                <li>
+                    <img src="./images/link.png" alt="바로가기">
+                    <a href="#">대백과사전 HTML</a>
+                </li>
+            </ul>
+        </main>
+        <footer>
+            <p>
+                <em>hyobin</em>
+                <span>hyobin9824@gmail.com</span>
+            </p>
+        </footer>
+    </div>
+</body>
+</html>
