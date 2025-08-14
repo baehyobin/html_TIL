@@ -110,7 +110,10 @@
 ### 색상 속성
 1. color : 글자색
 2. background-color : 배경색
-EX) `h1{color:red;}
+EX
+- `color:rgb(255,255,255);`
+- ⭐`color:rgba(255,255,255,0.5);` : a는 투명도
+- ⭐`color:#FF00FF;`
 
 ### #id
 * `<h1 id="heading">제목</h1>`
@@ -163,11 +166,39 @@ EX) `h1{color:red;}
 ### 바깥여백조정
 * 바깥 여백은 margin으로 조정 (margin-left/right/bottom/rop)
 * ex : `margin-bottom:16px` 요소끼리 여백만들기 등
-### 글자조정
-* `font-family:'';` 글씨체
-* `font-size:;` 글씨크기
-* `font-weigbt:;` 글자굵기 / regular 400 기준 +-100
-* `line-height:;` 행간
+
+*////inline은 여백 안먹힘! block으로 변환해야 먹힌다!////
+
 ### 구분선
 * `border(-bottom/top) : (사이즈) (실선여부) (색);`
 * 테두리와 해당 요소의 거리를 둘 땐 margin이 아닌 padding
+* `border-radius:(px);` 모서리 기울기 조절
+### 글자정렬
+* `text-aling:;`
+### 
+* `overflow:hidden;`
+* 자식요소가 부모를 넘어도 부모 범위 이상으로 노출되지 않음
+
+# CSS 글자 속성
+## font-family
+* `font-family:대표글꼴, 후보글꼴, 글꼴유형`
+* 글꼴유형 : snas-serif, serif
+* 글꼴명에 한글, 특수문자, 공백이 있을 경우 ``따옴표 묶기
+* 윈도우 기본 설치 글꼴 : 굴림, 고딕, 바탕, 궁서
+* 대표글꼴이 설치가 필요한 글꼴일 경우 : 해당 글꼴 파일을 웹주소로 연결해서 누구나 볼 수 있게 설정.
+<!--프리텐다드(v1.3.9) 웹글꼴 연결주소-->
+<link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css" />
+## font-size
+* `font-size:값확장자;`
+* 16px 평균값 기준으로 피그마, 포토샵 등에서 디자인한 글자 크기를 `rem, em`단위로 변환하여 작성
+* 16px == 1em or 1rem
+* rem은 부모크기에 비례하지 않은 본인의 고유 설정값으로 출력됨
+* `https://validator.w3.org/nu/#file` 변환사이트
+
+* `font-weigbt:;` 글자굵기 / regular 400 기준 +-100
+* `line-height:;` 행간
+---
+## 수열선택자
+* CSS에서 요소를 규칙적으로 선택할때 사용하는 선택자
+* `nth-child(n)`형태로 작성, 자식이 2개 이상 있을 때 n번째 자식이라는 개념
+* class 와 id로 이름짓기 적합하지 않은 경우에도 css선택이 가능해 다양하게 사용됨
