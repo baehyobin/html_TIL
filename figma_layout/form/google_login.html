@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <title>Login | Google</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!-- 웹글꼴 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+    <!-- 디자인리셋 -->
+    <link rel="stylesheet" href="./styles/reset.css">
+    <!-- css첨부 -->
+    <link rel="stylesheet" href="./styles/google_login.css">
+    <style>
+        /* 내부스타일 시트(HTML간 공유 불가하므로 외부연결을 권장) */
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <h1>Welcome back</h1>
+        <p>Welcome back! Pease enter you details.</p>
+        <!-- form==block | 선택, 입력 양식을 묶는 그룹 -->
+        <form action="#" method="post" id="login_form">
+            <fieldset class="id_pw_group"><!-- block -->
+                <legend>입력양식</legend><!-- inline -->
+                <dl>
+                    <dt>Email</dt>
+                    <dd><input type="text" name="uesr_email_id" id="uesr_email_id" class="id_pw" placeholder="Enter your email or id"></dd>
+                    <dt>Password</dt>
+                    <dd><input type="password" name="user_pw" id="user_pw" class="id_pw" placeholder="Enter your Password"></dd>
+                </dl>
+            </fieldset>
+            <fieldset class="btn_search_group">
+                <legend>버튼&찾기</legend>
+                <h2>Forgot password</h2>
+                <p><button type="submit" id="login_btn" class="btn">Login</button></p>
+                <p><a href="https://accounts.google.com/v3/signin/identifier?dsh=S-100568161%3A1755489552473393&flowEntry=ServiceLogin&flowName=GlifWebSignIn&ifkv=AdBytiMR97DmsDr8meAwYrh2kLZqB4YAzA98xqozaumkMx75K_2aFRoz1jYzVngklzWQLO2zF6TeqQ" target="_blank" id="sign_google" class="btn">Sign in with Google</a></p>
+                <p class="account">Don’t you have on account? <a href="#" class="sign_up">Sign up for free</a></p>
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>

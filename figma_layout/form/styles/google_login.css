@@ -1,0 +1,25 @@
+/* 외부스타일시트(HTML 공유가능) */
+#wrap{}
+#wrap h1{}
+#wrap p{}
+#wrap p form{}
+/* 아이디, 비번 */
+#wrap #login_form .id_pw_group{}
+#wrap #login_form .id_pw_group legend{}
+#wrap #login_form .id_pw_group dl{}
+#wrap #login_form .id_pw_group dl dt{}
+#wrap #login_form .id_pw_group dl dd{}
+#wrap #login_form .id_pw_group dl #user_email_id{}
+#wrap #login_form .id_pw_group dl #user_pw{}
+#wrap #login_form .id_pw_group dl .id_pw{}
+/* 버튼, 가입 */
+#wrap #login_form .gtn_search_group{}
+#wrap #login_form .gtn_search_group legend{}
+#wrap #login_form .gtn_search_group h2{}
+#wrap #login_form .gtn_search_group p{}
+#wrap #login_form .gtn_search_group p button{}
+#wrap #login_form .gtn_search_group p #login_btn{}
+#wrap #login_form .gtn_search_group p #sign_google{}
+#wrap #login_form .gtn_search_group p .btn{}
+#wrap #login_form .gtn_search_group p a{}
+#wrap #login_form .gtn_search_group p .account{}

@@ -42,6 +42,21 @@
             font-weight: 500; text-align: center;
         }
         #pay tbody tr td em{font-weight: 600; color: #ee239b;}
+        /* git 명령어표 그룹선택자 */
+        #git{}
+        #git thead{}
+        #git thead tr{}
+        #git thead tr th{}
+        #git tbody{}
+        #git tbody tr{}
+        #git tbody tr th{}
+        
+        #git,
+        #git thead tr th,
+        #git tbody tr th,
+        #git tbody tr td{
+            border: 1px solid #000;
+        }
     </style>
 </head>
 <body>
@@ -99,6 +114,39 @@
             <td>3</td>
             <!-- <td>4</td> -->
         </tr>
+    </table>
+    <hr>
+    /* 깃 명령어표 */
+    <table id="git">
+        <thead>
+            <tr>
+                <th scope="col">프로그래밍 종류</th>
+                <th scope="col">명령어</th>
+                <th scope="col">해석</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><!-- 1행 -->
+                <th rowspan="4" scope="row">Git</th>
+                <th scope="row">git init</th>
+                <td>깃 폴더 경로 설정</td>
+            </tr>
+            <tr><!-- 2행 -->
+                <!-- <th>Git</th> -->
+                <th scope="row">git remote add origin</th>
+                <td>깃허브 원격저장소 연결</td>
+            </tr>
+            <tr><!-- 3행 -->
+                <!-- <th>Git</th> -->
+                <th scope="row">git status</th>
+                <td>변경상태&스테이징 대기상태</td>
+            </tr>
+            <tr><!-- 4행 -->
+                <!-- <th>Git</th> -->
+                <th scope="row">git log</th>
+                <td>push 업로드한 기록(커밋포함)</td>
+            </tr>
+        </tbody>
     </table>
 </body>
 </html>

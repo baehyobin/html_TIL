@@ -61,7 +61,7 @@
 1. `<h1>~<h6>` block - 1대제목~6소제목
 2. `<p>` block - 제목 아래 작성하는 내용 태그
 3. `<br>` inline - 내용 안에 작성하는 줄바꿈태그
-4. `<en><strong>` inline - 내용 안 강조태그
+4. `<em><strong>` inline - 내용 안 강조태그
 5. `<del>` inline - 쇼핑몰 원가 등에 사용되는 취소선(삭제)태그
 6. `<address>` block - 회사 주소
 7. `&copy;` 특수문자태그 - copyright 약자
@@ -187,7 +187,8 @@ EX
 * 윈도우 기본 설치 글꼴 : 굴림, 고딕, 바탕, 궁서
 * 대표글꼴이 설치가 필요한 글꼴일 경우 : 해당 글꼴 파일을 웹주소로 연결해서 누구나 볼 수 있게 설정.
 <!--프리텐다드(v1.3.9) 웹글꼴 연결주소-->
-<link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css" />
+<link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css" /> 
+
 ## font-size
 * `font-size:값확장자;`
 * 16px 평균값 기준으로 피그마, 포토샵 등에서 디자인한 글자 크기를 `rem, em`단위로 변환하여 작성
@@ -202,3 +203,12 @@ EX
 * CSS에서 요소를 규칙적으로 선택할때 사용하는 선택자
 * `nth-child(n)`형태로 작성, 자식이 2개 이상 있을 때 n번째 자식이라는 개념
 * class 와 id로 이름짓기 적합하지 않은 경우에도 css선택이 가능해 다양하게 사용됨
+## HTML - Form
+* 사용자 입력/선택 요소 1개라도 등장 시 전체 영역을 'form'묶어주기 **action, method, id** 필수!
+* 폼 내부 양식 종류가 그룹별로 2개 이상 구분될 경우 `fieldset, legend` 작성
+* `fieldset` div처럼 그룹 역할이므로 id 또는 class 함께 작성
+* `fieldset`을 생략하고 `div, ul, ol, dl` 등 다른 그룹으로 대체 가능
+### form - input
+* `<input type="종류" name="데이터명" id="데이터명(중복X)" class="공통디자인명">`
+* `value`속성은 필요한 경우만 작성. 쇼핑몰 수량 1 기본값 등
+* 
