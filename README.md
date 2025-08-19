@@ -85,6 +85,24 @@
 * 다른 페이지의 특정 위치로 이동 시
 *`<a href="./상대경로#위치아이디명">클릭요소</a>`
 *`<a href="./login.html#search">클릭요소</a>`
+## HTML - Form
+* 사용자 입력/선택 요소 1개라도 등장 시 전체 영역을 'form'묶어주기 **action, method, id** 필수!
+* 폼 내부 양식 종류가 그룹별로 2개 이상 구분될 경우 `fieldset, legend` 작성
+* `fieldset` div처럼 그룹 역할이므로 id 또는 class 함께 작성
+* `fieldset`을 생략하고 `div, ul, ol, dl` 등 다른 그룹으로 대체 가능
+### form - input
+* `<input type="종류" name="데이터명" id="데이터명(중복X)" class="공통디자인명">`
+* `value`속성은 필요한 경우만 작성. 쇼핑몰 수량 1 기본값 등
+# Form 입력과 선택 요소
+## `<input type "">`
+* type=text : 입력요소/name(데이터구분용)/value(초기값)
+* type=checkbox : 선택요소/name(그룹용)/value(데이터구분용)
+* 입력 요소 종류 : text, password, mail, search, number 등
+* 선택 요소 종류 : checkbox, radio, select, option
+* 선택 요소에는 라벨이 필수적으로 따라붙음
+* 데이터구분용은 id처럼 해당 데이터만을 구분하는 중복되지 않는 이름을 설정한다.
+* 그룹용은 클래스와 같이 2개 이상의 요소를 묶어주는 반복이름개념으로 사용한다.
+---
 ## git 버전관리
 ### gitHub 폴더 복제 방법
 * `git clone 주소 붙여넣기`
@@ -174,7 +192,7 @@ EX
 * 테두리와 해당 요소의 거리를 둘 땐 margin이 아닌 padding
 * `border-radius:(px);` 모서리 기울기 조절
 ### 글자정렬
-* `text-aling:;`
+* `text-align:;`
 ### 
 * `overflow:hidden;`
 * 자식요소가 부모를 넘어도 부모 범위 이상으로 노출되지 않음
@@ -203,12 +221,28 @@ EX
 * CSS에서 요소를 규칙적으로 선택할때 사용하는 선택자
 * `nth-child(n)`형태로 작성, 자식이 2개 이상 있을 때 n번째 자식이라는 개념
 * class 와 id로 이름짓기 적합하지 않은 경우에도 css선택이 가능해 다양하게 사용됨
-## HTML - Form
-* 사용자 입력/선택 요소 1개라도 등장 시 전체 영역을 'form'묶어주기 **action, method, id** 필수!
-* 폼 내부 양식 종류가 그룹별로 2개 이상 구분될 경우 `fieldset, legend` 작성
-* `fieldset` div처럼 그룹 역할이므로 id 또는 class 함께 작성
-* `fieldset`을 생략하고 `div, ul, ol, dl` 등 다른 그룹으로 대체 가능
-### form - input
-* `<input type="종류" name="데이터명" id="데이터명(중복X)" class="공통디자인명">`
-* `value`속성은 필요한 경우만 작성. 쇼핑몰 수량 1 기본값 등
-* 
+
+### CSS Margin a padding 방법
+* `1px 2px 3px px` : 위->오른쪽->아래->왼쪽
+* `1px` : 상하좌우값동일
+* `1px 2px` : 상하1 좌우2
+* `1px 0 2px` : 상1 좌우0 하2
+* margin 겹침현상 주의!
+### a inlin 태그를 블록화할때
+* `display:block` 또는 `dispaly:inline-block`
+### 백그라운드 배경이미지 삽입
+* `background-imgh:url(경로);`
+* `background-repeat:반복설정;`
+* repeat
+* no-repeat
+* repeat-x
+* repeat-y
+* `background-position:(방향);`
+* x y 순으로 작성
+* 값(0%~100%, px, auto) 사용
+* `background-size:(이미지크기);`
+* 이미지 크기는 `(가로) (세로')` 한 쪽은 auto로 만들어야 비율이 맞는다
+* `contaion` - 요소 안에 배경 이미지가 전부 나타나도록 가로세로 조정
+* `cover` - 이미지로 요소의 크기를 모두 덮어 씌우는 형태로 적용(이미지잘림)
+* 백그라운드 통합
+* `background:배경색 주소 반복 포지션 / 크기;`

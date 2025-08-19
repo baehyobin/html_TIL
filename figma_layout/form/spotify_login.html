@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <title>Login | spotify</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!-- 텍스트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+    <!-- 디자인초기화 -->
+    <link rel="stylesheet" href="./styles/reset.css">
+    <!-- 디자인적용 -->
+    <link rel="stylesheet" href="./styles/spotify_login.css">
+</head>
+<body>
+    <main id="login_wrap">
+        <h1><a href="#"><img src="./images/Logo.svg.svg" alt="spotify"></a></h1>
+        <div class="tab_menu">
+            <a href="#" id="sign_in" class="active">SIGN IN</a>
+            <a href="#" id="sign_up">SIGN UP</a>
+        </div>
+        <!-- SIGN IN OPEN -->
+        <div class="sign_in_contents">
+            <form action="#" method="post" id="in_frm">
+                <ul class="id_pw_g">
+                    <li><input type="text" name="user_name" id="user_name" class="name_pw" placeholder="Username"></li>
+                    <li><input type="password" name="user_pw" id="user_pw" class="name_pw" placeholder="Password"></li>
+                </ul>
+                <div class="login_status">
+                    <input type="checkbox" name="login_y_g" id="login_y">
+                    <!-- checkbox 대체용 배경이미지 적용태그 -->
+                    <span class="chk_bg"></span>
+                    <label for="login_y">stay signed in</label>
+                </div>
+                <div class="btn_forget">
+                    <button type="submit" id="sign_in_btn">SIGN IN</button>
+                    <a href="#" class="forget_pw">Forget Password?</a>
+                </div>
+            </form>
+        </div>
+        <!-- SIGN UP OPEN -->
+        <div class="sign_up_contents"></div>
+    </main>
+</body>
+</html>
