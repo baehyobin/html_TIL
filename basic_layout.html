@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>레이아웃 연습|CSS</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <style>
+        #layout {
+            border: 2px solid black;
+            /* 부모요소는 자식만큼 크기를 인식한다(height:max-content)) */
+            /* 자식요소에 float 적용시 부모크기 인식불가능 */
+            /* 해결 1. 부모 높이 px 고정(추천) */
+            /* height: 100px; */
+            /* 해결 2. 가상 자식 요소 생성(추천) */
+            /* 해결 3. 영역 바깥쪽 숨기기(바깥 활용 디자인이 있을 경우 사용금지 ex.서브메뉴) */
+            /* overflow: hidden; */
+            /* 해결 4. 겹침 문제 해결로 다음 형제 요소에서 float재설정 */
+            /* 형제 요소에  clear: both; 삽입. 단, 레이아웃 크기는 X*/
+        }
+        /* 선언된 위치 기준 앞 요소의 float를 지우고 위치재배치 */
+        /* #layout::after{ */
+            /* content:''; */
+            /* display: block; */
+            /* clear: both;
+        } */
+        #layout > div {
+            width: 100px; height: 100px; font-size: 3rem;
+        }
+        #layout .box1 {float: left; background-color: aqua;}
+        #layout .box2 {float: left; background-color: blueviolet;}
+        #layout .box3 {float: right; background-color: crimson;}
+        #layout .box4 {float: left; clear: both; background-color: darkgreen;}
+        #layout .box5 {float: left; background-color:dodgerblue;}
+        #layout .box6 {float: right; background-color:olive}
+        section{
+            width: 500px; height: 500px;
+            background-color:lightslategray;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <div id="layout">
+        <div class="box1">1</div>
+        <div class="box2">2</div>
+        <div class="box3">3</div>
+        <div class="box4">4</div>
+        <div class="box5">5</div>
+        <div class="box6">6</div>
+    </div>
+    <section>뉴스</section>
+</body>
+</html>
