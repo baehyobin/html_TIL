@@ -1,7 +1,6 @@
 /* 마켓컬리 회원가입 양식 */
 body{background-color: #f5f5f5;}
 #wrap{
-    border: 3px solid red;
     width: 612px; margin: 0 auto;
     padding: 41px 0 0 ;
 }
@@ -23,12 +22,10 @@ body{background-color: #f5f5f5;}
 /* 가입양식(아이디~생년월일) */
 #wrap #join_frm{}
 #wrap #join_frm .user_info{
-    background-color: coral;
     margin: 0 0 54px;
     overflow: hidden;
 }
 #wrap #join_frm .user_info dt{
-    background-color: pink;
     width: 120px;
     /* display: inline-block; */
     /* 인라인블록은 기본 margin을 2-3px 내장하고있다. */
@@ -37,7 +34,6 @@ body{background-color: #f5f5f5;}
 #wrap #join_frm .user_info dt em{font-weight: 600; color: #F00;
 }
 #wrap #join_frm .user_info dd{
-    background-color: aqua;
     width: 300px;
     /* display: inline-block; */
     float: left;
@@ -48,14 +44,17 @@ body{background-color: #f5f5f5;}
     width: 120px;
     float: right;
 }
+/* 가입양식 --------------------------------- 버튼 hover 공통 */
+#wrap #join_frm .btn_design:hover{background-color: #df15ff !important;}
 /* 가입양식 --------------------------------- 1~6 공통 클래스 */
 #wrap #join_frm .user_info dd .input_de{
     border: 1px solid #aaa; border-radius: 5px;
     width: 100%; padding: 10px;
 }
-#wrap #join_frm .user_info dd .input_de::placeholder{
-font-size: 0.875rem; color: #aaa;
+#wrap #join_frm .user_info dd .input_de:focus{
+    border: 1px solid #9E00B7
 }
+#wrap #join_frm .user_info dd .input_de::placeholder{font-size: 0.875rem; color: #aaa;}
 /* 가입양식 --------------------------------- 1. 아이디 */
 #wrap #join_frm .user_info dd #user_id{}
 #wrap #join_frm .user_info dd #id_overlap_btn{
@@ -92,7 +91,7 @@ font-size: 0.875rem; color: #aaa;
 }
 /* 가입양식 --------------------------------- 7. 주소 */
 #wrap #join_frm .user_info dd .adr_search{
-    display: block; padding: 10px; text-align: center;
+    display: block; padding: 10px; text-align: center; margin-bottom: 5px;
     border: 1px solid #9E00B7; border-radius: 5px;
     font-size: 0.875rem;
     background-color: #FFF;
@@ -129,6 +128,8 @@ font-size: 0.875rem; color: #aaa;
     background-color: #FFF;
 }
 #wrap #join_frm .user_info dd .birthday::placeholder{color: #aaa;}
+#wrap #join_frm .user_info dd .birthday{border: 1px solid #fff;}
+#wrap #join_frm .user_info dd .birthday:focus{border: 1px solid #9E00B7;}
 #wrap #join_frm .user_info dd > span{
     color: #aaa; margin: 0 15px;
 }

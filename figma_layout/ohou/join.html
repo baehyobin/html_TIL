@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <title>오늘의 집 | 회원가입</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!-- 글꼴 -->
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css"/> 
+    <!-- 리셋 -->
+    <link rel="stylesheet" href="./style/reset.css">
+    <link rel="stylesheet" href="./style/join.css">
+</head>
+<body>
+    <div id="wrap">
+        <h1><a href="./index.html"><img src="./images/logo.png" alt="오늘의집"></a></h1>
+        <h1>회원가입</h1>
+        <p>SNS계정으로 간편하게 회원가입</p>
+        <div class="sns_login">
+            <a href="#"><img src="./images/facebook.png" alt="페이스북으로 회원가입"></a>
+            <a href="#"><img src="./images/kakao.png" alt="카카오톡으로 회원가입 "></a>
+            <a href="#"><img src="./images/naver.png" alt="네이버로 회원가입"></a>
+        </div>
+        <form action="#" method="post" id="join_frm">
+            <fieldset class="contents">
+                <legend>가입정보</legend>
+                <dl class="join_ohou">
+                    <!-- 1. 이메일 -->
+                    <dt>이메일</dt>
+                    <dd><input type="text" name="join_email" id="join_email" class="join_de" placeholder="이메일"></dd>
+                    <dd><span>@</span></dd>
+                    <dd>
+                        <select name="email_hp" id="email_hp" class="join_de">
+                            <option value="none">선택해주세요</option>
+                            <option value="gmail">gmail.com</option>
+                            <option value="naver">naver.com</option>
+                        </select>
+                    </dd>
+                    <dd><a href="#" class="email_search" target="_blank">이메일 인증하기</a></dd>
+                    <!-- 2. 비밀번호 -->
+                    <dt>비밀번호</dt>
+                    <dd><p>영문, 숫자를 포함한 8자 이상의 비밀번호를 입력해주세요</p></dd>
+                    <dd><input type="password" name="join_pw" id="join_pw" class="join_de" placeholder="비밀번호"></dd>
+                    <!-- 3. 비밀번호 확인 -->
+                    <dt>비밀번호 확인</dt>
+                    <dd><input type="password" name="join_pw" id="join_pw" class="join_de" placeholder="비밀번호"></dd>
+                    <!-- 4. 닉네임 -->
+                    <dt>닉네임</dt>
+                    <dd><p>다른 유저와 겹치지 않도록 입력해주세요.(2-20자)</p></dd>
+                    <dd><input type="text" name="join_nname" id="join_nname" class="join_de" placeholder="닉네임"></dd>
+                    <!-- 5. 약관동의 -->
+                </dl>
+            </fieldset>
+            <!-- 가입버튼 -->
+            <p><button type="submit" id="join_btn">회원가입</button></p>
+            <!-- 로그인 -->
+            <p>이미 아이디가 있으신가요?<a href="./login.html">로그인</a></p>
+        </form>
+    </div>
+</body>
+</html>
