@@ -11,6 +11,7 @@
     <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css"/> 
     <!-- 리셋 -->
     <link rel="stylesheet" href="./style/reset.css">
+    <link rel="stylesheet" href="./style/common.css">
     <link rel="stylesheet" href="./style/join.css">
 </head>
 <body>
@@ -29,30 +30,70 @@
                 <dl class="join_ohou">
                     <!-- 1. 이메일 -->
                     <dt>이메일</dt>
-                    <dd><input type="text" name="join_email" id="join_email" class="join_de" placeholder="이메일"></dd>
-                    <dd><span>@</span></dd>
                     <dd>
-                        <select name="email_hp" id="email_hp" class="join_de">
+                        <input type="text" name="user_email" id="user_email" class="join_de" placeholder="이메일">
+                        <span>@</span>
+                        <select name="user_email_adr" id="user_email_adr" class="join_de">
                             <option value="none">선택해주세요</option>
                             <option value="gmail">gmail.com</option>
                             <option value="naver">naver.com</option>
                         </select>
                     </dd>
-                    <dd><a href="#" class="email_search" target="_blank">이메일 인증하기</a></dd>
+                    <dd>
+                        <button type="button" id="email_overlap_btn">이메일 인증하기</button>
+                    </dd>
                     <!-- 2. 비밀번호 -->
                     <dt>비밀번호</dt>
                     <dd><p>영문, 숫자를 포함한 8자 이상의 비밀번호를 입력해주세요</p></dd>
-                    <dd><input type="password" name="join_pw" id="join_pw" class="join_de" placeholder="비밀번호"></dd>
+                    <dd><input type="password" name="user_pw" id="user_pw" class="join_de" placeholder="비밀번호"></dd>
                     <!-- 3. 비밀번호 확인 -->
                     <dt>비밀번호 확인</dt>
-                    <dd><input type="password" name="join_pw" id="join_pw" class="join_de" placeholder="비밀번호"></dd>
+                    <dd><input type="password" name="user_overlap_pw" id="user_overlap_pw" class="join_de" placeholder="비밀번호"></dd>
                     <!-- 4. 닉네임 -->
                     <dt>닉네임</dt>
                     <dd><p>다른 유저와 겹치지 않도록 입력해주세요.(2-20자)</p></dd>
-                    <dd><input type="text" name="join_nname" id="join_nname" class="join_de" placeholder="닉네임"></dd>
-                    <!-- 5. 약관동의 -->
+                    <dd><input type="text" name="user_nick" id="user_nick" class="join_de" placeholder="닉네임"></dd>
                 </dl>
             </fieldset>
+                <!-- 5. 약관동의 -->
+            <fieldset class="law">
+                <legend>가입약관</legend>
+                <dl>
+                    <dt>약관동의</dt>
+                    <dd> 
+                        <ul>
+                            <li>
+                                <input type="checkbox" name="agree_g" id="all" value="all">
+                                <label for="all">전체동의 <em>선택항목에 대한 동의 포함</em></label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="agree_g" id="age14" value="age14">
+                                <label for="age14">만 14세 이상입니다 <em class="essential">(필수)</em></label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="agree_g" id="use" value="use">
+                                <label for="use">이용약관 <em class="essential">(필수)</em></label>
+                                <a href="#" class="more"><img src="./images/arrow_forward_ios.png" alt="이용약관 더보기"></a>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="agree_g" id="collection" value="collection">
+                                <label for="collection">개인정보수집 및 이용동의 <em class="essential">(필수)</em></label>
+                                <a href="#" class="more"><img src="./images/arrow_forward_ios.png" alt="개인정보수집 더보기"></a>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="agree_g" id="maketing" value="maketing">
+                                <label for="maketing">개인정보 마케팅 활용 동의 <em class="choice">(선택)</em></label>
+                                <a href="#" class="more"><img src="./images/arrow_forward_ios.png" alt="마케팅활용 더보기"></a>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="agree_g" id="sms" value="sms">
+                                <label for="sms">이벤트, 쿠폰, 특가 알림 메일 및 SMS 등 수신<em class="choice">(선택)</em></label>
+                            </li>
+                        </ul>
+                    </dd>
+                </dl>
+            </fieldset>
+            
             <!-- 가입버튼 -->
             <p><button type="submit" id="join_btn">회원가입</button></p>
             <!-- 로그인 -->

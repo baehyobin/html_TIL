@@ -1,0 +1,91 @@
+/* sns 로그인 */
+#wrap .sns_login {text-align: center; margin-top: 14px;}
+#wrap .sns_login a {}
+#wrap .sns_login a:nth-of-type(2) {margin: 0 20px;}
+#wrap .sns_login a img {}
+/* 회원가입 */
+#wrap #join_frm {}
+/* 가입정보 통합 */
+#wrap #join_frm .contents {}
+#wrap #join_frm .contents .join_ohou {}
+#wrap #join_frm .contents .join_ohou dt {
+    font-weight: 500; 
+    font-size: 1.063rem; 
+    margin: 22px 0 10px;}
+#wrap #join_frm .contents .join_ohou dt:first-child {margin-top: 0;}
+#wrap #join_frm .contents .join_ohou dd p {font-size: 0.875rem; color: #777;}
+#wrap #join_frm .contents .join_ohou dd {clear: both; overflow: hidden;}
+#wrap #join_frm .contents .join_ohou dt+dd {margin: 0 0 10px;}
+#wrap #join_frm .contents .join_ohou dd input[id^=user] {
+    border: 1px solid #bbb; border-radius: 3px;
+    padding: 10px; width: 100%;
+}
+/* 가입정보------------------------------1. 이메일 */
+#wrap #join_frm .contents .join_ohou dd #user_email {width: 190px; float: left;}
+#wrap #join_frm .contents .join_ohou dd:first-of-type {width: 100%;}
+#wrap #join_frm .contents .join_ohou dd span {
+    color: #777; float: left;
+    margin-left: 7px;
+    transform: translateY(10px);
+}
+#wrap #join_frm .contents .join_ohou dd select[name*=adr] {
+    float: right;
+    border: 1px solid #bbb; border-radius: 3px;
+    width: 190px; padding: 11px;
+    background: #fff url(../images/arrow_drop_down.png) no-repeat right;
+}
+#wrap #join_frm .contents .join_ohou dd img {}
+#wrap #join_frm .contents .join_ohou dd select[name*=adr] option {}
+#wrap #join_frm .contents .join_ohou dd #email_overlap_btn {
+    text-align: center; width: 100%;
+    border: 1px solid #bbb; border-radius: 3px; padding: 10px 0;
+}
+
+/* 가입정보------------------------------2. 비밀번호 */
+#wrap #join_frm .contents .join_ohou dd #user_pw {}
+/* 가입정보------------------------------3. 비밀번호 확인 */
+#wrap #join_frm .contents .join_ohou dd #user_overlap_pw {}
+/* 가입정보------------------------------4. 닉네임 */
+#wrap #join_frm .contents .join_ohou dd #user_nick {}
+/* -------------------------------------5. 약관동의 */
+#wrap #join_frm .law {margin: 22px 0 0;}
+#wrap #join_frm .law dl {}
+#wrap #join_frm .law dl dt {font-weight: 500; font-size: 1.063rem; margin: 0 0 10px;}
+#wrap #join_frm .law dl dd {
+    border: 1px solid #ddd; border-radius: 3px;
+    padding: 10px;
+}
+#wrap #join_frm .law dl dd ul {
+}
+#wrap #join_frm .law dl dd ul li {padding: 10px 0 0;}
+/* -------------------------------------전체동의 1행 */
+#wrap #join_frm .law dl dd ul li:first-child {
+    border-bottom: 1px solid #ddd;
+}
+#wrap #join_frm .law dl dd ul li:first-child #all {display: none;}
+#wrap #join_frm .law dl dd ul li:first-child label {font-weight: 600;}
+#wrap #join_frm .law dl dd ul li:first-child em {color: #777; font-size: 0.875rem;}
+/* -------------------------------------개별동의 2~6행 통합 */
+#wrap #join_frm .law dl dd ul li input[name*=agree] {display: none;}
+#wrap #join_frm .law dl dd ul li input[name*=agree]:checked + label {
+    background-image: url(../images/check_box_y.png);
+}
+#wrap #join_frm .law dl dd ul li label {
+    display: inline-block;
+    background-image: url(../images/check_box_n.png);
+    background-repeat: no-repeat;
+    padding-left: 34px; line-height: 24px;
+    font-size: 0.813rem;}
+#wrap #join_frm .law dl dd ul li label em {}
+#wrap #join_frm .law dl dd ul li label .essential {color: #3292FF;}
+#wrap #join_frm .law dl dd ul li label .choice {color: #777; font-size: 0.75rem;}
+#wrap #join_frm .law dl dd ul li .more {float: right;}
+#wrap #join_frm .law dl dd ul li .more img {}
+/* -------------------------------------버튼 */
+#wrap #join_frm #join_btn {margin : 22px 0;}
+#wrap #join_frm > p {text-align: center; font-size: 0.875rem;}
+#wrap #join_frm > p a {
+    font-weight: 600; text-decoration: underline;
+}
+
+

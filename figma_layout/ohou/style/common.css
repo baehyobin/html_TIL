@@ -1,0 +1,35 @@
+/* header 공통 디자인 common.css */
+#wrap {
+    width: 440px;
+    padding: 50px 15px 0; margin: 0 auto;
+}
+#wrap h1, #wrap > p {text-align: center;}
+#wrap h1:first-child {
+    margin: 0 0 50px; text-align: center;
+}
+#wrap h1:first-child a {}
+#wrap h1:first-child a img {}
+#wrap h1:nth-child(2) {
+    font-weight: 600; font-size: 1.25rem;
+    margin: 0 0 14px;
+}
+#wrap > p {
+    font-size: 0.875rem; color: #777;
+}
+/* 제목-내용 경계선 */
+#wrap .link_g,
+#wrap form[id$=frm] {
+    border-top: 1px solid #aaa; width: 100%;
+    padding-top: 22px;
+    margin-top: 50px;
+}
+/* 로그인, 회원가입 공통 버튼 디자인 */
+#wrap a.login,
+#wrap a.join,
+#wrap button[id$=in_btn] {
+    display: block; text-align: center;
+    width: 100%;
+    background-color: #3292ff; color: #FFF;
+    border-radius: 3px;
+    padding: 15px 0;
+}

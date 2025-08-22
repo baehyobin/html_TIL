@@ -1,0 +1,24 @@
+/* sns로그인 */
+#wrap .sns_login {text-align: center; margin-top: 14px;}
+#wrap .sns_login a {}
+#wrap .sns_login a:nth-of-type(2) {margin: 0 20px;}
+#wrap .sns_login a img {}
+/* 로그인창 */
+#wrap #login_frm {}
+#wrap #login_frm .login_ohou {}
+#wrap #login_frm .login_ohou dt {font-weight: 500; font-size: 1.063rem; margin: 0 0 10px;}
+#wrap #login_frm .login_ohou dt:nth-of-type(2) {}
+#wrap #login_frm .login_ohou dd {margin:0 0 22px;}
+#wrap #login_frm .login_ohou dd input[name^=login] {
+    border: 1px solid #ddd; border-radius: 3px;
+    padding: 10px 0 10px 10px; width: 100%;
+    color: #bbb;
+}/* 통합 */
+#wrap #login_frm .login_ohou dd #login_id {}
+#wrap #login_frm .login_ohou dd #login_pw {}
+/* 버튼 */
+#wrap #login_frm #login_btn {margin: 0 0 22px;}
+#wrap #login_frm > p {text-align: center; font-size: 0.875rem;}
+#wrap #login_frm > p a {
+    font-weight: 600; text-decoration: underline;
+}
