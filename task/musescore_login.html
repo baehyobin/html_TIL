@@ -3,9 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="Create, play back and print beautiful sheet music with free and easy to use music notation software MuseScore Studio.">
+    <meta name="keywords" content="Musescore, musescore login">
+    <title>Log in to Musescore | Musescore</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css" /> 
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/musescore_login.css">
 </head>
 <body>
-    
+    <div id="wrap">
+        <h1>Log in to Musescore</h1>
+        <p>Don't have an account?<a href="#">Sign Up</a></p>
+        <div id="sns_login">
+            <a href="#"><img src="./images/google-login.png" alt="google_login">Continue with Google</a>
+            <a href="#"><img src="./images/fb-login.svg" alt="facebook_login"></a>
+            <a href="#"><img src="./images/apple-login.svg" alt="apple_login"></a>
+        </div>
+        <p><em>or</em></p>
+        <form action="#" method="post" id="login_frm">
+            <dl class="login_msscr">
+                <dt>Email or username</dt>
+                <dd><input type="text" name="user_login" id="user_login" class="login_info"></dd>
+                <dt>Password</dt>
+                <dd><a href="#">Forget your password?</a></dd>
+                <dd><input type="password" name="user_pw" id="user_pw" class="login_info"></dd>
+                <button type="submit" id="login_btn">Log in</button>
+            </dl>
+        </form>
+    </div>
 </body>
 </html>

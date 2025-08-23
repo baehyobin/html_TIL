@@ -1,0 +1,21 @@
+#wrap {
+    width: 320px; margin: 0 auto;
+}
+#wrap {}
+#wrap h1{}
+#wrap p{}
+#wrap p a{}
+/* sns 로그인 */
+#wrap #sns_login{}
+#wrap #sns_login a{}
+#wrap #sns_login a img{}
+/* 로그인폼 */
+#wrap #login_frm {}
+#wrap #login_frm .login_msscr {}
+#wrap #login_frm .login_msscr dt {}
+#wrap #login_frm .login_msscr dd {}
+#wrap #login_frm .login_msscr dd .login_info {}/* 통합디자인 */
+#wrap #login_frm .login_msscr dd #user_login {}
+#wrap #login_frm .login_msscr dd #user_pw {}
+/* 로그인 버튼 */
+#wrap #login_frm .login_msscr #login_btn {}
