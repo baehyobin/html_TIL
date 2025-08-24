@@ -61,7 +61,7 @@
     font-size: 0.75rem;
 }
 /* 로그인 버튼 */ 
-#wrap #login_frm .login_msscr #login_btn {
+#wrap p #login_btn {
     font-size: 0.75rem; width: 290px;
     color: #a7a4a9; padding: 10px 0; margin-top: 12px;
     background-color: #ddd; border-radius: 20px;
