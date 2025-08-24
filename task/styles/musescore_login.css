@@ -1,21 +1,68 @@
 #wrap {
     width: 320px; margin: 0 auto;
+    padding: 15px 15px 0;
 }
 #wrap {}
-#wrap h1{}
-#wrap p{}
-#wrap p a{}
+#wrap h1{
+    font-size: 1.625rem; font-weight: 700;
+    text-align: center;
+    margin-bottom: 8px;
+}
+#wrap p{text-align: center; font-size: 0.75rem;}
+#wrap p a{color: #6b5dfe;}
+/* or */
+#wrap p:nth-child(4) em {
+    display: inline-block;
+    padding: 0 7px;
+}
 /* sns 로그인 */
-#wrap #sns_login{}
-#wrap #sns_login a{}
+#wrap #sns_login{
+    text-align: center;
+    margin: 12px 0;
+}
+#wrap #sns_login a:nth-of-type(1) {
+    background-color: #6b5dfe;
+}
+#wrap #sns_login a{
+    font-size: 0.75rem;
+}
+#wrap #sns_login a span {
+    display: inline-block;
+    transform: translateY(-8px);
+    margin-left: 5px; color: #fff;
+}
 #wrap #sns_login a img{}
+#wrap #sns_login a img:nth-of-type(1) {width: 24px; height: 24px;}
+#wrap #sns_login .ggl,
+#wrap #sns_login .fb,
+#wrap #sns_login .apl {
+    display: inline-block;
+    border: 1px solid #a7a4a9; border-radius: 20px;
+    padding: 5px 10px;
+}
 /* 로그인폼 */
-#wrap #login_frm {}
+#wrap #login_frm {margin-top: 12px;}
 #wrap #login_frm .login_msscr {}
-#wrap #login_frm .login_msscr dt {}
+#wrap #login_frm .login_msscr dt {
+    font-weight: 600; font-size: 0.75rem; margin-bottom: 5px;
+}
+#wrap #login_frm .login_msscr dt:nth-of-type(2) {display: inline-block; float: left;}
 #wrap #login_frm .login_msscr dd {}
-#wrap #login_frm .login_msscr dd .login_info {}/* 통합디자인 */
-#wrap #login_frm .login_msscr dd #user_login {}
+#wrap #login_frm .login_msscr dd .login_info {
+    width: 290px; padding: 12px;
+    border: 1px solid #a7a4a9;
+    font-size: 0.75rem;
+}
+#wrap #login_frm .login_msscr dd .login_info {}
+#wrap #login_frm .login_msscr dd #user_login {margin-bottom: 15px;}
 #wrap #login_frm .login_msscr dd #user_pw {}
-/* 로그인 버튼 */
-#wrap #login_frm .login_msscr #login_btn {}
+#wrap #login_frm .login_msscr dd a {
+    display: inline-block; float: right;
+    font-size: 0.75rem;
+}
+/* 로그인 버튼 */ 
+#wrap #login_frm .login_msscr #login_btn {
+    font-size: 0.75rem; width: 290px;
+    color: #a7a4a9; padding: 10px 0; margin-top: 12px;
+    background-color: #ddd; border-radius: 20px;
+}
