@@ -1,0 +1,62 @@
+/* index 파일에만 존재하는 디자인 */
+#wrap main .visual_wrap {
+    width: 100vw; overflow: hidden;
+}
+#wrap main .visual_wrap .visual_bnr_wrap {
+    /* section 정렬을 위한 부모대상 flex 설정 */
+    display:flex;/* 필수 */
+    flex-flow: row nowrap;
+    width: max-content;/* 자식의 전체너비만큼 */
+}
+#wrap main .visual_wrap .visual_bnr_wrap section {
+    background-size:cover;
+    height:700px; width: 1920px;
+    /* padding: 440px 0 0 80px; */
+    position: relative;/* absolute걸린 자식의 부모 기준 설정 */
+}/* 공통 */
+#wrap main .visual_wrap .visual_bnr_wrap section h2 {
+    font-size:var(--text-title70);
+    font-weight:var(--weight-bold);
+    line-height:var(--line-title);
+    letter-spacing:var(--letter-minus2);
+    position: absolute;
+    left: 80px; bottom: 134px;
+}/* 공통 */
+#wrap main .visual_wrap .visual_bnr_wrap section p {
+    font-size:var(--text-contents21);
+    line-height:var(--line-contents);
+    letter-spacing:var(--letter-minus2);
+    color:var(--color-gray4);
+    position: absolute;
+    left: 80px; bottom: 30px;
+}/* 공통 */
+#wrap main .visual_wrap .visual_bnr_wrap .bnr1 {
+    background-image:url(../images/row1_bnr1.jpg);
+}
+#wrap main .visual_wrap .visual_bnr_wrap .bnr1 h2 {
+    color:var(--color-white);
+}
+#wrap main .visual_wrap .visual_bnr_wrap .bnr1 p {
+    color:var(--color-white);
+}
+#wrap main .visual_wrap .visual_bnr_wrap .bnr2 {
+    background-image:url(../images/row1_bnr2.jpg);
+}
+#wrap main .visual_wrap .visual_bnr_wrap .bnr2 h2 {
+    color:var(--color-title-brown);
+}
+#wrap main .visual_wrap .visual_bnr_wrap .bnr2 p {}
+#wrap main .visual_wrap .visual_bnr_wrap .bnr3 {
+    background-image:url(../images/row1_bnr3.jpg);
+}
+#wrap main .visual_wrap .visual_bnr_wrap .bnr3 h2 {
+    color:var(--color-title-indigo);
+}
+#wrap main .visual_wrap .visual_bnr_wrap .bnr3 p {}
+#wrap main .visual_wrap .visual_bnr_wrap .bnr4 {
+    background-image:url(../images/row1_bnr4.jpg);
+}
+#wrap main .visual_wrap .visual_bnr_wrap .bnr4 h2 {
+    color:var(--color-title-coral);
+}
+#wrap main .visual_wrap .visual_bnr_wrap .bnr4 p {}
