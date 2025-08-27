@@ -1,3 +1,36 @@
+/* 고정 페이지 위치 */
+#wrap main .main_pst_link {
+    position:fixed; z-index: 80;
+    right: 50px; top: 285px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-end;
+    gap: 20px;
+}
+#wrap main .main_pst_link a {
+    display: flex; flex-flow: row nowrap; gap: 10px;
+}
+#wrap main .main_pst_link a span {}
+#wrap main .main_pst_link a .name {
+    font-size: var(--text-sub10);
+    display: none;
+}
+#wrap main .main_pst_link a .circle {}
+#wrap main .main_pst_link a .circle {
+    display: block; width: 10px; height: 10px;
+    background-color: var(--color-white); border-radius: 50%;
+    /* box-shadow:x값 y값 blur값 색상; */
+    box-shadow: 0 0 4px rgba(0,0,0,0.25);
+}
+/* 첫번째 circle 활성화 디자인 */
+#wrap main .main_pst_link a:first-child .circle {background-color: var(--color-point);}
+/* 마우스 올릴 시 활성화 디자인 */
+/* 1. 글자숨기기 */
+/* 2. circle 마우스 올리면 */
+/* 2-1. circle 검은색 변경 */
+/* 2-2. 글자 보이기 */
+#wrap main .main_pst_link a:hover .circle {background-color: var(--color-black)}
+#wrap main .main_pst_link a:hover .name {display: inline-block;}
 /* index 파일에만 존재하는 디자인 */
 #wrap main .visual_wrap {
     width: 100vw; overflow: hidden;
@@ -60,3 +93,68 @@
     color:var(--color-title-coral);
 }
 #wrap main .visual_wrap .visual_bnr_wrap .bnr4 p {}
+/* ----------------------------------1행&2행 좌우버튼 */
+#wrap main .visual_wrap .prev_next_wrap,
+#wrap main .news_notice_wrap .prev_next_wrap {
+    display: flex; flex-direction: row nowrap;
+    justify-content: center;
+    gap: 20px; padding: 40px 0;
+}
+#wrap main .visual_wrap .prev_next_wrap a,
+#wrap main .news_notice_wrap .prev_next_wrap a {}
+#wrap main .visual_wrap .prev_next_wrap a img,
+#wrap main .news_notice_wrap .prev_next_wrap a img {}
+#wrap main .visual_wrap .prev_next_wrap .next img,
+#wrap main .news_notice_wrap .prev_next_wrap .next img {
+    transform: scaleX(-1);
+}
+#wrap main .visual_wrap .prev_next_wrap .prev,
+#wrap main .news_notice_wrap .prev_next_wrap .prev {}
+/* -------------------------------------2행 시작 */
+#wrap main .news_notice_wrap {
+    padding: 50px 0 0;
+    display: flex; flex-flow: column nowrap; align-items: center;
+}
+#wrap main .news_notice_wrap h2 {
+    font-size: var(--text-title40); font-weight: var(--weight-bold); 
+    letter-spacing: var(--letter-minus2);
+}
+#wrap main .news_notice_wrap > p {
+    margin: 30px 0 80px; line-height: var(--line-contents);}
+/* 카드뉴스 */
+#wrap main .news_notice_wrap .card_wrap {
+    width: var(--width-desktop);
+    overflow: hidden;
+}
+#wrap main .news_notice_wrap .card_wrap .card_all {
+    display: flex; flex-flow: row nowrap; gap: 65.33px;
+    width: max-content;
+}
+#wrap main .news_notice_wrap .card_wrap .card_all li {
+    width: 311px; height: 298px; border: 1px solid var(--color-grayd);
+    position: relative; background-color: var(--color-white);
+}
+#wrap main .news_notice_wrap .card_wrap .card_all li:hover {
+    border: 1px solid var(--color-point);
+}
+#wrap main .news_notice_wrap .card_wrap .card_all li a {}
+#wrap main .news_notice_wrap .card_wrap .card_all li a .photo {}
+#wrap main .news_notice_wrap .card_wrap .card_all li a .photo img {width: 100%;}
+#wrap main .news_notice_wrap .card_wrap .card_all li a h3 {
+    font-size: var(--text-title18); font-weight: var(--weight-medium);
+    padding: 20px 20px 0;
+}
+#wrap main .news_notice_wrap .card_wrap .card_all li .date {
+    position: absolute; left: 20px; bottom: 20px;
+    font-size: var(--text-sub14); color: var(--color-gray4);
+}
+#wrap main .news_notice_wrap .view_all_btn {
+    width: 200px; height: 48px; margin: 30px 0 80px;
+    border: 1px solid var(--color-grayd);
+    text-align: center;
+    font-size: var(--text-sub14);
+    display: flex; flex-flow: row nowrap;
+    justify-content: center; align-items: center; gap: 10px;
+}
+#wrap main .news_notice_wrap .view_all_btn span {}
+#wrap main .news_notice_wrap .view_all_btn img {}

@@ -3,28 +3,37 @@
     /* --대상-용도:반복속성값; */
     /* 글자크기 */
     --text-title70:4.375rem;
+    --text-title40:2.5rem;
+    --text-title18:1.125rem;
     --text-contents21:1.313rem;
     --text-menu18:1.125rem;
+    --text-sub14:0.875rem;
     --text-sub12:0.75rem;
+    --text-sub10:0.625rem;
     /* 행간 */
-    --line-title:0.9;
+    --line-title:0.9; 
     --line-contents:1.5;
     /* 자간 */
     --letter-minus2:-0.02rem;
     /* 굵기 */
     --weight-bold:700;
     --weight-semibold:600;
+    --weight-medium:500;
     /* 색상(테두리색, 배경색, 글자색 등) */
     --color-white:#fff;
+    --color-black:#000;
     --color-gray4:#444;
     --color-graya:#aaa;
+    --color-grayd:#ddd;
     --color-title-brown:#642c10;
     --color-title-indigo:#1d356d;
     --color-title-coral:#d43936;
+    --color-point:#36b4e5;
     /* 레이아웃 정보 */
     --width-desktop:1440px;
     --margin-desktop-l-r-80:80px;
 }
+body,html {scroll-behavior: smooth;}
 /* header 포함 공통 */
 #wrap {}
 #wrap header {
@@ -35,7 +44,10 @@
     flex-flow:row nowrap;/* 메인축(수평) 줄바꿈안함 */
     justify-content: space-between; /* 메인축 정렬(양쪽끝) */
     align-items:center;/* 교차축(수직) 가운데 */
-    position: relative;/* lab 크기+위치 부모 기준 */
+    position: fixed;/* lab 크기+위치 부모 기준 */
+    z-index: 900; left: 0; right: 0;
+    width: 100%;/* fixed나 absolute가 포지션으로 들어가면 너비값을 조정해야함 */
+    background-color: var(--color-white);
 }
 #wrap header h1 {}
 #wrap header h1 a {}
@@ -128,4 +140,4 @@
 #wrap header .right_menu li:nth-child(2) .lang_select .EN {margin-bottom: 10px;}
 #wrap header .right_menu li:nth-child(2) .lang_select .CN {}
 /* 메인 */
-#wrap main {}
+#wrap main {padding-top: 92px;}
