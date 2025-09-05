@@ -25,11 +25,14 @@
         #v_btn {
             position:absolute; left:0; bottom:50px; width:100%;
             display:flex; justify-content: center;
+            
         }
         #v_btn a {
             width:100px; margin:0 10px; 
             display:flex; align-items:flex-end;
+            transform-origin: right bottom;transition: transform 0.4s;
         }
+        #v_btn a:hover {transform: rotate(10deg);}
         #v_btn a img {width:100%;}
     </style>
     <script>

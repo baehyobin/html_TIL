@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        main {background-color: aquamarine; max-width: 1000px; margin: 100px auto;}
+        main .coffee {width: 200px; display: block; border: 1px solid pink;}
+        main .coffee img{width: 100%;}
+        main .c1 {transition: transform 0.3s;}
+        main .c1:hover {
+            /* transform:속성(값) 속성(값) 속성(값); */
+            transform: scale(1.2);
+        }
+        main .c2 {transform-origin: right top; transition: transform 0.5s;}
+        main .c2:hover {
+            transform: rotate(-20deg) scale(1.2);
+        }
+        main .c3 {transition: transform 0.5s; transform-origin: left bottom;}
+        main .c3:hover {
+            transform: skewx(-10deg) skewY(-10deg) scale(0.8);
+        }
+        main .c4 {transition: 0.5s;}
+        main p:hover .c4 {
+            transform: translate(300px,10px) rotate(40deg) scale(0.7);
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <a href="#" class="coffee c1"><img src="./coffee_images/starbucks1.png" alt=""></a>
+        <a href="#" class="coffee c2"><img src="./coffee_images/starbucks1.png" alt=""></a>
+        <a href="#" class="coffee c3"><img src="./coffee_images/starbucks1.png" alt=""></a>
+        <p><a href="#" class="coffee c4"><img src="./coffee_images/starbucks1.png" alt=""></a></p>
+    </main>
+</body>
+</html>

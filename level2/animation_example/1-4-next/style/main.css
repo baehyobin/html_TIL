@@ -33,9 +33,13 @@ header nav > ul {
 }
 header nav > ul > li {padding:0 10px; position:relative;}
 header nav > ul > li > a {}
+header nav > ul > li > a {}
 header nav > ul > li > .sub {
-    position:absolute; 
+    position:absolute; transform: translateY(-80px);
+    /* display:none; */
+    opacity: 0; transition: all 0.5s;
 }
+header nav > ul > li:hover .sub {opacity: 1; transform: translateY(0);}
 header nav > ul > li > .sub li {width:100px; padding: 10px 0 0;}
 header nav > ul > li > .sub li a {}
 header nav > ul > li > .sub li a:hover {color:#ddd;}
@@ -45,6 +49,7 @@ section .sec1 {background-image:url(../images/main_bg_01.jpg)}
 section .sec2 {background-image:url(../images/main_bg_02_3.jpg)}
 section .sec3 {background-image:url(../images/main_bg_03.jpg)}
 section > div {
+    background-attachment:fixed;
     background-size:cover; background-position:center;
     text-align:center; height:100vh; width:100%; 
     display:flex; flex-flow:column wrap; justify-content:center; color:#fff;
@@ -59,6 +64,37 @@ section > div h1 {
     font-size:3.0em; line-height:1.5;
 }
 section > div p {font-size:0.875em; letter-spacing:-0.2px; line-height:1.7;}
+/* 2번째 sec -> 애니메이션 공부 */
+section .sec2 .container {
+    width: 1440px; margin: 0 auto; background-color: rgba(0,255,0,0.5);
+    position: relative; 
+}
+section .sec2 .container h1,
+section .sec2 .container h1+p {position: relative; z-index: 50; color: #fff;}
+section .sec2 .container .space {position: absolute; z-index: 10; top: 50%; transform: translateY(-50%);}
+section .sec2 .container .space img {}
+section .sec2 .container .space1 {left: 0;}
+section .sec2 .container .space1 img {animation: move100 1s linear 3 alternate both;}
+section .sec2 .container .space2 {right: 0;}
+section .sec2 .container .space2 img {animation: rotate360 10s linear infinite;}
+section .sec2 .container .space3 {left: 50%; transform: translate(-50%, -50%);}
+section .sec2 .container .space3 img {animation: kurukuru 5s ease 4 alternate ;}
+/* 애니메이션 준비 1. keyframes */
+/* 애니메이션 준비 2. 적용 요소 선택자 animation 속성으로 키프레임 불러오기 */
+/* @keyframes 애니메이션 이름 {from~to 또는 0~100% 최소 2개 이상 장면분기} */
+@keyframes rotate360 {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
+@keyframes move100 {
+    0% {transform: translateY(0);}
+    100% {transform: translateY(100px);}
+}
+@keyframes kurukuru {
+    0% {transform: translateX(0deg);}
+    50% {transform: rotate(360deg) translateX(-300px); }
+    100% {transform: rotate(0deg) translateX(300px);}
+}
 /*footer*/
 footer {
     position:fixed; left:0; bottom:0; height:100px;
