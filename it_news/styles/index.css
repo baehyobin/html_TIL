@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200..900&display=swap');
+/* 바디 */
+body {width: 1920px; height: auto;}
+/* 헤더 */
+header {
+    width: 100%; height: 110px; padding: 0 60px; 
+    display: flex; flex-flow: row nowrap; align-items: center; justify-content: space-between;
+    border-bottom: solid 1px #000; position: fixed;
+    background-color: #fff;
+}
+header #logo {}
+header #logo img {}
+header #gnb {display: flex; flex-flow: row nowrap; gap: 45px;}
+header #gnb a {font-size: 1.125rem;}
+header .search {}
+header .search img {}
+/* 메인 */
+main {width: 100%; padding: 0 120px;}
+main #container {padding-top: 110px;}
+main #container .title_part {
+    margin: 80px 0 40px; display: flex; flex-flow: row nowrap;
+    align-items: center; justify-content: space-between;
+}
+main #container .title_part .title {
+    display: flex; flex-flow: column nowrap;
+    gap: 5px;
+}
+main #container .title_part .title h1 {font-size: 2.5rem; font-weight: 500;}
+main #container .title_part a {
+    padding: 15px 10px; border-radius: 10px; font-size: 1.125rem;
+    background-color: #ddd; transition: all 1s ease;
+}
+main #container .title_part a:hover {background-color: #ff4242; color: #fff;}
+main #container .card {padding: 50px 0; display: flex; flex-flow: column nowrap; gap: 50px;}
+main #container .card .top {}
+main #container .card .top h2 {font-size: 1.875rem; font-weight: 500; margin-bottom: 5px;}
+main #container .card .top h3 {font-size: 1.563rem; margin-bottom: 20px;}
+main #container .card .top p {font-size: 1.125rem;}
+main #container .card .bottom .text {
+    text-align: center; display: flex; flex-flow: column nowrap;
+    align-items: center; justify-content: center; width: 100%;
+}
+main #container .card .bottom .text h3 {font-size: 1.563rem; margin-bottom: 10px;}
+main #container .card .bottom .text p {font-size: 1.125rem;}
+main #container .card1 .card1_bottom {display: flex; flex-flow: row nowrap; align-items: center; justify-content: space-between;}
+main #container .card2 .card2_bottom {
+    text-align: center; display: flex; flex-flow: column nowrap;
+    align-items: center; justify-content: center; width: 100%; font-size: 1.563rem;
+}
+main #container .card3 span {text-align: center;}
+main #container .card3 .subs {
+    transform: translateX(777px);
+    padding: 15px 10px; border-radius: 10px; font-size: 1.125rem;
+    background-color: #ddd; transition: all 1s ease; width: fit-content;
+}
+main #container .card3 .subs:hover {background-color: #ff4242; color: #fff;}
+main #container .final {width: 100%; text-align: center; padding: 0 15px; background-color: #ddd;}
+main #container .final p {font-family: "Noto Serif KR", serif; font-size: 1.563rem; margin-bottom: 50px;}
+/* 푸터 */
+footer {
+    width: 100%; height: 400px; display: flex; background-color: #505066; padding: 0 120px;
+    flex-flow: row nowrap; align-items: center; justify-content: start;
+}
+footer p {color: #fff; font-family: "Noto Serif KR", serif; font-size: 1.563rem;}
