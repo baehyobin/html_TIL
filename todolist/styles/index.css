@@ -1,2 +1,50 @@
 /* 프리텐다드글꼴 */
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css");
+
+body {}
+body .wrap {
+    width: 440px; height: 956px;
+    background-color: #fff; border: 1px solid #000;
+    margin: 0 auto; padding: 20px;
+    position: relative;
+}
+/* header */
+body .wrap header {
+    padding: 30px 0; display: flex; flex-flow: row nowrap; justify-content: space-between; align-items: center;
+    border-bottom: 1px solid #000;
+}
+body .wrap header h1 {font-size: 1.25rem; font-weight: 500;}
+body .wrap header .header_icons {display: flex; flex-flow: row nowrap; gap: 20px;}
+body .wrap header .header_icons button {}
+/* main */
+body .wrap main {padding: 30px 0;}
+body .wrap main .main_part {}
+body .wrap main .main_part .all_list {display: flex; flex-flow: column nowrap; gap: 10px;}
+body .wrap main .main_part .all_list .list {
+    display: flex; flex-flow: row nowrap; justify-content: space-between; align-items: center;
+    padding: 15px 25px; border-radius: 50px; background-color: #CFFECB;
+}
+body .wrap main .main_part .all_list .list:last-child {background-color: #91CE8C;}
+body .wrap main .main_part .all_list .list:hover {background-color: #91CE8C;}
+
+body .wrap main .main_part .all_list .list p {font-size: 0.875rem;}
+body .wrap main .main_part .all_list .list button {}
+body .wrap main .main_part .all_list .list button img {}
+/* 텍스트박스 */
+body .wrap main .main_part .write_part {
+    display: flex; flex-flow: column nowrap; gap: 10px; padding: 10px;
+    width: 400px; height: auto; background-color: #CFFECB;
+    border-radius: 20px;
+    /* 위치시키기 */
+    position: absolute; top: 134px;
+    /* 없애놓기 */
+    display: none;
+}
+body .wrap main .main_part .write_part .write_icons {
+    display: flex; flex-flow: row nowrap; align-items: center; justify-content: space-between; padding: 0 10px;
+}
+body .wrap main .main_part .write_part .write_icons button {}
+body .wrap main .main_part .write_part form {}
+body .wrap main .main_part .write_part form textarea {
+    border-radius: 20px; padding: 10px;
+    width: 380px; height: 240px; font-size: 0.875rem;}
