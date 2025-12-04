@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/index.css">
+</head>
+<body>
+    <header>
+        <h1>To-Do List</h1>
+        <div class="header_icons">
+            <button type="button" class="search"><img src="./images/search.png" alt="검색"></button>
+            <button type="button" class="write"><img src="./images/write.png" alt="작성"></button>
+        </div>
+    </header>
+    <main>
+        <div class="wrap">
+            <div class="all_list">
+                <div class="list"><p>운동하기</p><button type="button" class="check_before"><img src="./images/check_before.png" alt=""></button></div>
+                <div class="list"><p>피아노 연습하기</p><button type="button" class="check_before"><img src="./images/check_before.png" alt=""></button></div>
+                <div class="list"><p>도시락싸기</p><button type="button" class="check_before"><img src="./images/check_before.png" alt=""></button></div>
+                <div class="list"><p>스킨케어</p><button type="button" class="check_before"><img src="./images/check_after.png" alt=""></button></div>
+            </div>
+            <div class="write_part">
+                <div class="write_icons">
+                    <button type="button" class="close"><img src="./images/close.png" alt="창닫기"></button>
+                    <button type="button" class="done"><img src="./images/done.png" alt="작성완료"></button>
+                </div>
+                <form>
+                    <textarea name="textarea" rows="10" cols="30">입력해주세요</textarea>
+                </form>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
