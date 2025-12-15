@@ -1,0 +1,37 @@
+main {
+    width: 440px; height: 956px;
+    background-image: url(../images/sky.jpg);
+    padding: 50px 20px; margin: 0 auto;
+    display: flex; flex-flow: column nowrap; justify-content: space-between; align-items: center;
+}
+main #now_weather {
+    padding: 40px 0;
+    display: flex; flex-flow: column nowrap; gap: 15px; align-items: center;
+}
+main #now_weather .now {
+    display: flex; flex-flow: column nowrap; gap: 10px; align-items: center;
+}
+main #now_weather .now p {font-size: 0.75rem;}
+main #now_weather .now h2 {font-size: 1.563rem;}
+main #now_weather .now h1 {font-size: 1.875rem;}
+main #now_weather .weathericon {text-align: center;}
+main #now_weather .weathericon p {margin-bottom: 10px;}
+main #now_weather .weathericon p span {}
+main #now_weather .weathericon p span img {}
+main #now_weather > p {}
+main article {
+    width: 100%;
+}
+main article h3 {font-size: 0.75rem; margin-bottom: 30px;}
+main article .sections {
+    display: flex; flex-flow: row nowrap; justify-content: space-between; align-items: center;
+}
+main article .sections section {
+    display: flex; flex-flow: column nowrap; gap: 10px; align-items: center;
+}
+main article .sections section h4 {font-size: 0.75rem;}
+main article .sections section span {}
+main article .sections section span img {}
+main article .sections section p {}
+main article .sections #time09 h4 {color: #186BE9;}
+main article .sections #time14 h4 {color: #E91818;}
